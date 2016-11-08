@@ -74,8 +74,18 @@ a:hover.back-to-top {
     background-color: black;
     color: white;
 }
- 
-    
+ .hov:hover{
+    border:5px solid #fd0000;
+}
+ .hov1:hover{
+    border:5px solid #36b44a;
+}
+ .hov2:hover{
+    border:5px solid #004f8c;
+}  
+ .hov3:hover{
+    border:5px solid #ffff00;
+}
 .content1 .transbox{
     padding-top: 50px;
         height: 480px; /* For IE8 and earlier */
@@ -108,10 +118,10 @@ a:hover.back-to-top {
         <div id="navbar" class="navbar-collapse collapse">
            <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li ><a href="#">About</a></li>
+                <li ><a href="#about">About</a></li>
                <li><a href="#">Team</a></li>
-                <li><a href="#">Programs</a></li>
-               <li><a href="#">Contact</a></li>
+                <li><a href="#spec">Programs</a></li>
+               <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
          </div>
@@ -139,7 +149,7 @@ a:hover.back-to-top {
             <div class="carousel-caption">
               <h1>#Code4</h1>
               <p>Users now demand access to services via mobile devices and few businesses can afford to ignore their wishes!</p>
-              <p><a class="btn btn-primary" href="#" role="button">View Gallery</a></p>
+              <p><a class="btn btn-primary" href="#about" role="button">Read More</a></p>
             </div>
           </div>
         </div>
@@ -149,7 +159,7 @@ a:hover.back-to-top {
             <div class="carousel-caption">
               <h1>#Training</h1>
               <p>Build and design amazing projects. Earn a valued credential. Launch your career. Be in demand </p>
-              <p><a class="btn btn-primary" href="#" role="button">View Gallery</a></p>
+              <p><a class="btn btn-primary" href="#spec" role="button">Read More</a></p>
             </div>
           </div>
         </div>
@@ -159,7 +169,7 @@ a:hover.back-to-top {
             <div class="carousel-caption">
               <h1 style="color:black;">#Cyber Security</h1>
               <p style="color:black;">Its not a matter of If a {cybersecurity} breach will happen, but When"</p>
-              <p><a class="btn btn-primary" href="#" role="button">View Gallery</a></p>
+              <p><a class="btn btn-primary" href="#spec" role="button">Read More</a></p>
             </div>
           </div>
         </div>
@@ -181,7 +191,7 @@ a:hover.back-to-top {
     
     
     
-     <div class="content3"><div class="transbox">
+     <div class="content3" id="about"><div class="transbox">
         <div class="container" style="background-color: rgba(255, 255, 255, 0.3)">
         <div class="row">
             <h1 style="padding-top: 30px; padding-bottom: 10px;" class="lead text-center">ABOUT US</h1>
@@ -225,25 +235,25 @@ a:hover.back-to-top {
     
     
     
-    <div class="content"><div class="transbox">
+    <div class="content" id="spec"><div class="transbox">
         <div class="container" style="background-color: rgba(255, 255, 255, 0.3)">
         <div class="row">
             <h2  class="lead text-center" style="padding-top: 30px;"><b>OUR SPECIALIZATION</b></h2>
             <p class="lead text-center" style="padding-bottom: 20px;"><small>Accurate and efficient solutions on:</small></p>
-            <div class="col-sm-3"><center><img src="media/Computer-Security-Icon.png" height="100" width="100" class="img-circle"></center>
+            <div class="col-sm-3"><center><img src="media/Computer-Security-Icon.png" height="100" width="100" class="img-circle hov"></center>
             <br><p class="lead text-center">Cyber Security</p>
                 <p class="text-justify">
                     We will make sure your staff has security systems and processes in place that they need. We will test your infastructure and your processes so you can be sure you're well prepared and monitor your key systems, website and network to ensure your data is safe. 
     
                 </p><hr>
             </div>
-           <div class="col-sm-3"><center><img src="media/train5.jpg" height="100" width="100" class="img-circle"></center>
+           <div class="col-sm-3"><center><img src="media/train5.jpg" height="100" width="100" class="img-circle hov1"></center>
             <br><p class="lead text-center">ICT Training</p>
                <p class="text-center">eHub is where high-potential, pro-active students learn to code from a world-class curriculum with top quality 
                    instructors and mentors to support them in the process: 95% graduate hiring.
                </p><br><br><p></p><hr>
             </div>
-            <div class="col-sm-3"><center><img src="media/tech.jpg" height="100" width="100" class="img-circle"></center>
+            <div class="col-sm-3"><center><img src="media/tech.jpg" height="100" width="100" class="img-circle hov2"></center>
             <br><p class="lead text-center">Technology Consultancy</p>
                 <p class="text-justify">
                     We deliver full-featured technology consulting services:
@@ -254,7 +264,7 @@ a:hover.back-to-top {
                     Project Requirements Design.
                 </p><hr>
             </div>
-            <div class="col-sm-3"><center><img src="media/comp.jpg" height="100" width="100" class="img-circle"></center>
+            <div class="col-sm-3"><center><img src="media/comp.jpg" height="100" width="100" class="img-circle hov3"></center>
             <br><p class="lead text-center">Software.Websites.Apps</p>
                 
                 <p class="text-justify">
@@ -374,7 +384,7 @@ a:hover.back-to-top {
     
 <!-- </div>
       FOOTER -->
-      <footer  class="text-center" style="height:200px; background-color:#333; color:white;">
+      <footer id="contact"class="text-center" style="height:200px; background-color:#333; color:white;">
         <div class="container">
        <div class="row" style="padding-top:10px;">
         <div  class="col-sm-3"><img src="media/map25-redish.png" height="20" ><p>eHub House,</p> 
@@ -392,7 +402,9 @@ a:hover.back-to-top {
                 <i class="fa fa-linkedIn" aria-hidden="true" style="font-size:15px; padding-left:10px;"></i>
             </p>
             
-      <p>&copy; <?php echo " ".date("Y"); ?> eHub</p> </div>
+      <p>&copy; <?php echo " ".date("Y"); ?> eHub</p>
+           <footer class="pull-right" style="padding-top:100px;">By &copy;Mickemlyn</footer>
+           </div>
         </div>
         </div>
       </footer>
